@@ -1,5 +1,4 @@
 #!/bin/bash
-set -euo pipefail
 
 # ----------------
 # Install packages
@@ -56,7 +55,7 @@ ln -s $PWD/ssh/config ~/.ssh/config
 # Hostfile
 # --------
 while read l; do
-	present=`grep $l /etc/hosts`
+	present=`grep "$l" /etc/hosts`
 	if [ "$present" == "" ]; then
 		sudo echo $l >> /etc/hosts
 	fi
