@@ -55,7 +55,6 @@ ln -s $PWD/ssh/config ~/.ssh/config
 # --------
 # Hostfile
 # --------
-# sudo cat hostfile/hosts >> /etc/hosts
 while read l; do
 	present=`grep $l /etc/hosts`
 	if [ "$present" == "" ]; then
