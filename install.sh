@@ -55,7 +55,13 @@ ln -s $PWD/ssh/config ~/.ssh/config
 # --------
 # Hostfile
 # --------
-sudo cat hostfile/hosts >> /etc/hosts
+# sudo cat hostfile/hosts >> /etc/hosts
+while read l; do
+	present=`grep $l /etc/hosts`
+	if [ "$present" == "" ]; then
+		sudo echo $l >> /etc/hosts
+	fi
+done < hostfile/hosts
 
 # ---------
 # Vim stuff
