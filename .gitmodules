@@ -1,0 +1,27 @@
+[submodule "vim/pack/my-plugins/start/cscope-maps"]
+	path = vim/pack/my-plugins/start/cscope-maps
+	url = https://github.com/joe-skb7/cscope-maps.git
+[submodule "vim/pack/my-plugins/start/file-line"]
+	path = vim/pack/my-plugins/start/file-line
+	url = https://github.com/bogado/file-line.git
+[submodule "vim/pack/my-plugins/start/molokai"]
+	path = vim/pack/my-plugins/start/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "vim/pack/my-plugins/start/nerdcommenter"]
+	path = vim/pack/my-plugins/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/pack/my-plugins/start/tagbar"]
+	path = vim/pack/my-plugins/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/pack/my-plugins/start/vim-airline"]
+	path = vim/pack/my-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/my-plugins/start/vim-airline-themes"]
+	path = vim/pack/my-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/pack/my-plugins/start/ultisnips"]
+	path = vim/pack/my-plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim/pack/my-plugins/start/vim-snippets"]
+	path = vim/pack/my-plugins/start/vim-snippets
+	url = https://github.com/olivierpierre/vim-snippets.git

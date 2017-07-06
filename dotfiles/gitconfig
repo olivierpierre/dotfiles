@@ -1,0 +1,6 @@
+[user]
+	name = Pierre Olivier
+	email = polivier@vt.edu
+
+[push]
+	default = simple

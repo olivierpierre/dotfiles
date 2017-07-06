@@ -1,0 +1,11 @@
+curl
+build-essential
+exuberant-ctags
+cscope
+preload
+git
+subversion
+vim
+net-tools
+vim-python-jedi
+zsh
