@@ -4,7 +4,7 @@
 :set shiftwidth=4
 :colorscheme molokai
 :set mouse=a
-":set autoindent
+:set autoindent
 :set number
 :set wrap
 ":set cursorline
