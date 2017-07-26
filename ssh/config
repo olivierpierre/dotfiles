@@ -20,12 +20,16 @@ Host ec2
 	IdentityFile ~/.ssh/bibullebot.pem
 	User ubuntu
 
+Host cerberus
+	User pierre
+
 Host jupiter
 	ProxyCommand ssh cerberus nc jupiter 22
 	User root
 
 Host undertow
-	Proxycommand ssh cerberus nc undertow 22
+	HostName echo.ece.vt.edu
+	Port 2030
 	User pierre
 
 Host venus
