@@ -1,3 +1,7 @@
+Host echo
+	HostName echo.ece.vt.edu
+	User polivier
+
 Host panopticon
 	User pierre
 
