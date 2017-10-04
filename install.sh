@@ -28,10 +28,15 @@ done
 for f in `ls dotfiles/*`; do
 	name=`basename $f`
 	# Backup
-	if [ -e ~/.$name ]; then
+	if [ -f ~/.$name ]; then
 		echo "~/.$name already exists, backing it up as ~/.$name.bak"
 		mv ~/.$name ~/.$name.bak
 	fi	
+	if [ -L ~/.$name ]; then
+		echo "~/.$name already exists, backing it up as ~/.$name.bak"
+		mv ~/.$name ~/.$name.bak
+	fi	
+
 
 	# Symlink
 	ln -s $PWD/$f ~/.$name
@@ -41,6 +46,11 @@ done
 # SSH stuff
 # ---------
 if [ -e ~/.ssh/config ]; then
+	echo "~/.ssh/config already exists, backing it up as ~/.ssh/config.bak"
+	mv ~/.ssh/config ~/.ssh/config.bak
+fi
+
+if [ -L ~/.ssh/config ]; then
 	echo "~/.ssh/config already exists, backing it up as ~/.ssh/config.bak"
 	mv ~/.ssh/config ~/.ssh/config.bak
 fi
@@ -71,6 +81,12 @@ if [ -e ~/.vim ]; then
 	echo "~/.vim exists, baking it up as ~/.vim/bak"
 	mv ~/.vim ~/.vim.bak
 fi
+
+if [ -L ~/.vim ]; then
+	echo "~/.vim exists, baking it up as ~/.vim/bak"
+	mv ~/.vim ~/.vim.bak
+fi
+
 ln -s $PWD/vim/ ~/.vim
 
 # ---------
@@ -84,5 +100,10 @@ for f in `ls oh-my-zsh/*`; do
 		echo "~/.oh-my-zsh/custom/$name already exists, backing it up as ~/.oh-my-zsh/custom/$name.bak"
 		mv ~/.oh-my-zsh/custom/$name ~/.oh-my-zsh/custom/$name.bak 
 	fi
+	if [ -L ~/.oh-my-zsh/custom/$name ]; then
+		echo "~/.oh-my-zsh/custom/$name already exists, backing it up as ~/.oh-my-zsh/custom/$name.bak"
+		mv ~/.oh-my-zsh/custom/$name ~/.oh-my-zsh/custom/$name.bak 
+	fi
+
 	ln -s $PWD/oh-my-zsh/$name ~/.oh-my-zsh/custom/$name
 done
