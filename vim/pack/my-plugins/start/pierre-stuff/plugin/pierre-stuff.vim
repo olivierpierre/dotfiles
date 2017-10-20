@@ -24,8 +24,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Shortcuts
 :map m :w<CR> :make<CR>
-:map s :w<CR>
-:map q :wq<CR>
+":map s :w<CR>
+":map q :wq<CR>
 
 " Re-open a file at the last position
 if has("autocmd")
