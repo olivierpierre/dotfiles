@@ -1,3 +1,11 @@
+Host hermit
+	ProxyCommand ssh cerberus nc hermit 22
+	User pierre
+
+Host ppc
+	ProxyCommand ssh cerberus nc power 22
+	User polivier
+
 Host echo
 	HostName echo.ece.vt.edu
 	User polivier

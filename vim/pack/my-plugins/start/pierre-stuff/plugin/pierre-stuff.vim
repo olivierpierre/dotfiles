@@ -7,6 +7,7 @@
 :set autoindent
 :set number
 :set wrap
+:set nojoinspaces
 ":set cursorline
 ":set cursorcolumn
 
