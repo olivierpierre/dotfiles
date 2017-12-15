@@ -10,34 +10,8 @@ Host echo
 	HostName echo.ece.vt.edu
 	User polivier
 
-Host panopticon
-	User pierre
-
-Host morningrise
-	User pierre
-
-Host hetpopcorn
-	User root
-
-Host container1
-	User root
-
-Host hermitcore1
-	User root
-
-Host hermitcore2
-	User root
-
-Host ec2
-	IdentityFile ~/.ssh/bibullebot.pem
-	User ubuntu
-
 Host cerberus
 	User pierre
-
-Host jupiter
-	ProxyCommand ssh cerberus nc jupiter 22
-	User root
 
 Host undertow
 	HostName echo.ece.vt.edu
@@ -64,28 +38,9 @@ Host syst.univ-brest.fr
 Host pierreolivier.eu
 	User pierre
 
-Host x86-het
-	Proxycommand ssh cerberus nc 10.1.1.128 22
-	user pierre
-
-Host arm-het
-	ProxyCommand ssh cerberus nc 10.1.1.129 22
-	user pierre
-
-#Host whitewhale
-#	ProxyCommand ssh cerberus nc whitewhale 22
-#	User root
-
-Host leg
-	ProxyCommand ssh cerberus nc leg 22
-	User root
-
 Host sonic
 	ProxyCommand ssh cerberus nc sonic 22
 	User root
-
-Host stella
-	ProxyCommand ssh cerberus nc stella 22
 
 Host rosella
         ProxyCommand ssh cerberus nc rosella 22
