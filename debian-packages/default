@@ -3,7 +3,6 @@ curl
 build-essential
 exuberant-ctags
 cscope
-preload
 git
 subversion
 vim
