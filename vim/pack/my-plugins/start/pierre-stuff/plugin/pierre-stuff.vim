@@ -33,3 +33,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
       \| exe "normal! g'\"" | endif
 endif
+
+" Search tag file on parent directories, up to root
+set tags=./tags;/
