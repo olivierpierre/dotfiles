@@ -9,3 +9,4 @@
 	st = status
 	co = checkout
 	ci = commit
+	d = diff
