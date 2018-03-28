@@ -107,3 +107,15 @@ for f in `ls oh-my-zsh/*`; do
 
 	ln -s $PWD/oh-my-zsh/$name ~/.oh-my-zsh/custom/$name
 done
+
+# -----------
+# Dconf stuff
+# -----------
+for f in `ls dconf`; do
+	name=`basename $f`
+	conf_str=${name//_/\/}
+	dconf load dconf/$conf_str < $f
+done
+
+# Tilix profile symlink
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
