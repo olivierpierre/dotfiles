@@ -67,7 +67,7 @@ ln -s $PWD/ssh/config ~/.ssh/config
 while read l; do
 	present=`grep "$l" /etc/hosts`
 	if [ "$present" == "" ]; then
-		sudo echo $l >> /etc/hosts
+		echo $l | tee -a /etc/hosts
 	fi
 done < hostfile/hosts
 
