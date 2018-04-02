@@ -10,3 +10,8 @@
 	co = checkout
 	ci = commit
 	d = diff
+
+[pager]
+	log = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
+	show = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
+	diff = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less

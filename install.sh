@@ -119,3 +119,8 @@ done
 
 # Tilix profile symlink
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+
+# -----------------
+# git diff-highlight
+# ------------------
+sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
