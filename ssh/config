@@ -1,16 +1,16 @@
 Host hermit
-	ProxyCommand ssh cerberus nc hermit 22
+	ProxyCommand ssh nile.ece.vt.edu nc hermit 22
 	User pierre
 
 Host ppc
-	ProxyCommand ssh cerberus nc power 22
+	ProxyCommand ssh nile.ece. vt.edu nc power 22
 	User polivier
 
 Host echo
 	HostName echo.ece.vt.edu
 	User polivier
 
-Host cerberus
+Host nile.ece.vt.edu
 	User pierre
 
 Host undertow
@@ -19,14 +19,14 @@ Host undertow
 	User pierre
 
 Host venus
-	ProxyCommand ssh cerberus nc venus 22
+	ProxyCommand ssh nile.ece.vt.edu nc venus 22
 	User root
 
 Host lateralus
-	ProxyCommand ssh cerberus nc 10.1.1.174 22	
+	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.174 22	
 
 Host whitewhale
-	ProxyCommand ssh cerberus nc 10.1.1.43 22
+	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.43 22
 	User pierre
 
 Host chronoslinux.org
@@ -39,8 +39,4 @@ Host pierreolivier.eu
 	User pierre
 
 Host sonic
-	ProxyCommand ssh cerberus nc sonic 22
-
-Host rosella
-	ProxyCommand ssh cerberus nc rosella 22
-	User root
+	ProxyCommand ssh nile.ece.vt.edu nc sonic 22
