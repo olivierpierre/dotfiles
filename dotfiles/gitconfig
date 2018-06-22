@@ -10,6 +10,10 @@
 	co = checkout
 	ci = commit
 	d = diff
+	dt = difftool
+
+[diff]
+	tool = meld
 
 [pager]
 	log = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
