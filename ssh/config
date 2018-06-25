@@ -23,7 +23,7 @@ Host venus
 	User root
 
 Host lateralus
-	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.174 22	
+	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.174 22
 
 Host whitewhale
 	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.43 22
