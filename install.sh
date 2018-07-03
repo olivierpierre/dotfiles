@@ -61,16 +61,6 @@ fi
 
 ln -s $PWD/ssh/config ~/.ssh/config
 
-# --------
-# Hostfile
-# --------
-while read l; do
-	present=`grep "$l" /etc/hosts`
-	if [ "$present" == "" ]; then
-		echo $l | tee -a /etc/hosts
-	fi
-done < hostfile/hosts
-
 # ---------
 # Vim stuff
 # ---------
