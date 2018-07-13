@@ -124,17 +124,10 @@ export EDITOR=vim
 
 export TERM=xterm-256color
 
-export PATH="$PATH:/home/pierre/Software/CodeSourcery/bin/"
-export PATH="$PATH:/home/pierre/Software/clang+llvm-3.9.0-x86_64-linux-gnu-ubuntu-16.04/bin/"
-
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias ....="cd ../../../.."
 alias .....="cd ../../../../.."
 
-alias docker="sudo docker"
-
-ghclone() {
-	git clone git@github.com:olivierpierre/$1.git
-}	
+alias n="nautilus . &"
