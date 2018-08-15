@@ -3,7 +3,7 @@
 # ----------------
 # Install packages
 # ---------------
-sudo apt update 
+sudo apt update
 
 read -p "Do you want to upgrade installed packages? [y/n]" -n 1 -r
 echo
@@ -11,7 +11,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	sudo apt upgrade -y
 fi
 
-cat debian-packages/default | xargs sudo apt install -y
+cat debian-packages/default | xargs sudo apt install --ignore-missing -y
 
 for f in `ls debian-packages/optional/*`; do
 	name=`basename $f`
@@ -31,11 +31,11 @@ for f in `ls dotfiles/*`; do
 	if [ -f ~/.$name ]; then
 		echo "~/.$name already exists, backing it up as ~/.$name.bak"
 		mv ~/.$name ~/.$name.bak
-	fi	
+	fi
 	if [ -L ~/.$name ]; then
 		echo "~/.$name already exists, backing it up as ~/.$name.bak"
 		mv ~/.$name ~/.$name.bak
-	fi	
+	fi
 
 
 	# Symlink
@@ -79,25 +79,6 @@ fi
 
 ln -s $PWD/vim/ ~/.vim
 
-# ---------
-# Oh-my-zsh
-# ---------
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-for f in `ls oh-my-zsh/*`; do
-	name=`basename $f`
-	if [ -e ~/.oh-my-zsh/custom/$name ]; then
-		echo "~/.oh-my-zsh/custom/$name already exists, backing it up as ~/.oh-my-zsh/custom/$name.bak"
-		mv ~/.oh-my-zsh/custom/$name ~/.oh-my-zsh/custom/$name.bak 
-	fi
-	if [ -L ~/.oh-my-zsh/custom/$name ]; then
-		echo "~/.oh-my-zsh/custom/$name already exists, backing it up as ~/.oh-my-zsh/custom/$name.bak"
-		mv ~/.oh-my-zsh/custom/$name ~/.oh-my-zsh/custom/$name.bak 
-	fi
-
-	ln -s $PWD/oh-my-zsh/$name ~/.oh-my-zsh/custom/$name
-done
-
 # -----------
 # Dconf stuff
 # -----------
@@ -114,3 +95,24 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 # git diff-highlight
 # ------------------
 sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
+
+# ---------------------------------------------------------
+# Oh-my-zsh (should be done in last as it switches to zsh )
+# ---------------------------------------------------------
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+for f in `ls oh-my-zsh/*`; do
+	name=`basename $f`
+	if [ -e ~/.oh-my-zsh/custom/$name ]; then
+		echo "~/.oh-my-zsh/custom/$name already exists, backing it up as ~/.oh-my-zsh/custom/$name.bak"
+		mv ~/.oh-my-zsh/custom/$name ~/.oh-my-zsh/custom/$name.bak
+	fi
+	if [ -L ~/.oh-my-zsh/custom/$name ]; then
+		echo "~/.oh-my-zsh/custom/$name already exists, backing it up as ~/.oh-my-zsh/custom/$name.bak"
+		mv ~/.oh-my-zsh/custom/$name ~/.oh-my-zsh/custom/$name.bak
+	fi
+
+	ln -s $PWD/oh-my-zsh/$name ~/.oh-my-zsh/custom/$name
+done
+
+
