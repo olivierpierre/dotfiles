@@ -1,32 +1,26 @@
-Host hermit
-	ProxyCommand ssh nile.ece.vt.edu nc hermit 22
-	User pierre
+Host echo2
+    ProxyCommand ssh echo nc echo2 22
+    User pierre
 
-Host ppc
-	ProxyCommand ssh nile.ece. vt.edu nc power 22
-	User polivier
+Host echo3
+    ProxyCommand ssh echo nc echo3 22
+    User pierre
+
+Host fox0
+    ProxyCommand ssh echo nc fox0 22
+    User pierre
+
+Host fox1
+    ProxyCommand ssh echo nc fox1 22
+    User pierre
 
 Host echo
 	HostName echo.ece.vt.edu
 	User polivier
 
-Host nile.ece.vt.edu
-	User pierre
-
 Host undertow
 	HostName echo.ece.vt.edu
 	Port 2030
-	User pierre
-
-Host venus
-	ProxyCommand ssh nile.ece.vt.edu nc venus 22
-	User root
-
-Host lateralus
-	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.174 22
-
-Host whitewhale
-	ProxyCommand ssh nile.ece.vt.edu nc 10.1.1.43 22
 	User pierre
 
 Host chronoslinux.org
@@ -37,6 +31,3 @@ Host syst.univ-brest.fr
 
 Host pierreolivier.eu
 	User pierre
-
-Host sonic
-	ProxyCommand ssh nile.ece.vt.edu nc sonic 22
