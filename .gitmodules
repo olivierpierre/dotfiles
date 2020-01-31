@@ -28,3 +28,6 @@
 [submodule "vim/pack/my-plugins/start/vim-better-whitespace"]
 	path = vim/pack/my-plugins/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "vim/pack/my-plugins/start/vim-latex"]
+	path = vim/pack/my-plugins/start/vim-latex
+	url = https://github.com/vim-latex/vim-latex.git

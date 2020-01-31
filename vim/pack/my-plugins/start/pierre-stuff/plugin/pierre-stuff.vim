@@ -24,7 +24,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Shortcuts
-:map m :w<CR> :make<CR>
+:map m :w<CR> :make!<CR>
 ":map s :w<CR>
 ":map q :wq<CR>
 
