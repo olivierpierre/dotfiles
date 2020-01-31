@@ -15,6 +15,9 @@
 [diff]
 	tool = meld
 
+[merge]
+	tool = meld
+
 [pager]
 	log = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 	show = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less

@@ -8,6 +8,7 @@
 :set number
 :set wrap
 :set nojoinspaces
+:set expandtab
 ":set cursorline
 ":set cursorcolumn
 
