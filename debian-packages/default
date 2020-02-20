@@ -7,7 +7,7 @@ git
 subversion
 vim
 net-tools
-vim-gnome
+vim-gtk3
 zsh
 tmux
 tilix
