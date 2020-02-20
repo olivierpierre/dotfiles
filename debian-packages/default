@@ -13,3 +13,5 @@ tmux
 tilix
 meld
 gdb
+flex
+bison
