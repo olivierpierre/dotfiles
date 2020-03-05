@@ -14,3 +14,5 @@ tilix
 meld
 gdb
 autojump
+flex
+bison
