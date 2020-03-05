@@ -1,3 +1,6 @@
+Host babbage.cs.man.ac.uk
+    User oliviep
+
 Host echo2
     ProxyCommand ssh echo nc echo2 22
     User pierre
