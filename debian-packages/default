@@ -9,9 +9,7 @@ vim
 net-tools
 vim-gtk3
 zsh
-tmux
 tilix
-meld
 gdb
 autojump
 flex
