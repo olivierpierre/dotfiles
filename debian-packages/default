@@ -16,3 +16,4 @@ gdb
 autojump
 flex
 bison
+apt-file

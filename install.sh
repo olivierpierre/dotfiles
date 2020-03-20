@@ -94,7 +94,12 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 # -----------------
 # git diff-highlight
 # ------------------
-sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
+sudo make -C /usr/share/doc/git/contrib/diff-highlight/
+
+# ---------------
+# apt-file update
+# ---------------
+sudo apt-file update
 
 # ---------------------------------------------------------
 # Oh-my-zsh (should be done in last as it switches to zsh )
