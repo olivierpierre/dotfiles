@@ -1,30 +1,8 @@
+Host sausage-penguin.duckdns.org
+    User pierre
+
 Host babbage.cs.man.ac.uk
     User oliviep
-
-Host echo2
-    ProxyCommand ssh echo nc echo2 22
-    User pierre
-
-Host echo3
-    ProxyCommand ssh echo nc echo3 22
-    User pierre
-
-Host fox0
-    ProxyCommand ssh echo nc fox0 22
-    User pierre
-
-Host fox1
-    ProxyCommand ssh echo nc fox1 22
-    User pierre
-
-Host echo
-	HostName echo.ece.vt.edu
-	User polivier
-
-Host undertow
-	HostName echo.ece.vt.edu
-	Port 2030
-	User pierre
 
 Host chronoslinux.org
 	User pierre
