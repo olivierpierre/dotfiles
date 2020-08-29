@@ -26,3 +26,8 @@ disassemble() {
     objdump --source $1 > $f
     vim $f
 }
+
+# Upload a file to file.io
+up() {
+    curl -F "file=@$1" https://file.io
+}

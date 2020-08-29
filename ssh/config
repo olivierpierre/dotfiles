@@ -1,3 +1,7 @@
+Host lateralus
+    ProxyCommand ssh vps802716.ovh.net nc localhost 4321
+#    ProxyCommand ssh sausage-penguin.duckdns.org nc localhost 4321
+
 Host sausage-penguin.duckdns.org
     User pierre
 
