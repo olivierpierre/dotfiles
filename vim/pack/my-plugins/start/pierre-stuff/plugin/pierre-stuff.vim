@@ -37,3 +37,6 @@ endif
 
 " Search tag file on parent directories, up to root
 set tags=./tags;/
+
+" Highlight current line in insert mode
+:autocmd InsertEnter,InsertLeave * set cul!
