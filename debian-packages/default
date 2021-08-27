@@ -16,3 +16,4 @@ flex
 bison
 apt-file
 libnotify-bin
+python3-pygments
