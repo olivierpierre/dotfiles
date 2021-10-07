@@ -9,6 +9,7 @@
 :set wrap
 :set nojoinspaces
 :set expandtab
+:set clipboard=unnamedplus
 ":set cursorline
 ":set cursorcolumn
 
@@ -40,3 +41,10 @@ set tags=./tags;/
 
 " Highlight current line in insert mode
 :autocmd InsertEnter,InsertLeave * set cul!
+
+" Disable latex-suite smart dots (... -> \ldots)
+let g:Tex_SmartKeyDot=0
+
+" Thin cursor
+set guicursor=i:ver25-iCursor
+
