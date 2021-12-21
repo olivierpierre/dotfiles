@@ -48,3 +48,8 @@ let g:Tex_SmartKeyDot=0
 " Thin cursor
 set guicursor=i:ver25-iCursor
 
+" navigate through wrapped lines, rather than physical lines
+imap <silent> <Down> <C-o>gj
+imap <silent> <Up> <C-o>gk
+nmap <silent> <Down> gj
+nmap <silent> <Up> gk
