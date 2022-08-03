@@ -10,9 +10,6 @@
 [submodule "vim/pack/my-plugins/start/nerdcommenter"]
 	path = vim/pack/my-plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/pack/my-plugins/start/tagbar"]
-	path = vim/pack/my-plugins/start/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/pack/my-plugins/start/vim-airline"]
 	path = vim/pack/my-plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
