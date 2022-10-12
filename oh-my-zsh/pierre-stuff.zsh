@@ -13,7 +13,7 @@ fi
 source /usr/share/autojump/autojump.sh
 
 # Aliases and functions
-alias n="nautilus . &"
+alias n="(nautilus . &)"
 
 # Usage: not <time after which to send the notification> <notification message>
 not() {
