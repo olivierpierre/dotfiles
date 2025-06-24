@@ -24,6 +24,6 @@
 	diff = /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 
 [credential]
-	helper = cache --timeout=3600
+	helper = store
 [pull]
 	rebase = false
