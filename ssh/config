@@ -1,3 +1,15 @@
+Host pi
+    ProxyCommand ssh vps802716.ovh.net nc localhost 1116
+
+Host undertow
+    ProxyCommand ssh vps802716.ovh.net nc localhost 1119
+
+Host watershed
+    ProxyCommand ssh vps802716.ovh.net nc localhost 1118
+
+Host vertikal
+    ProxyCommand ssh vps802716.ovh.net nc localhost 1114
+
 Host lateralus
     ProxyCommand ssh vps802716.ovh.net nc localhost 1113
 
