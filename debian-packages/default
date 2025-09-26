@@ -17,3 +17,4 @@ bison
 apt-file
 libnotify-bin
 pandoc
+flatpak
