@@ -1,35 +1,42 @@
 Host pi
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1116
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1116
 
 Host undertow
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1119
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1119
 
 Host watershed
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1118
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1118
 
 Host vertikal
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1114
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1114
 
 Host lateralus
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1113
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1113
 
 Host morningrise
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1111
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1111
 
 Host orchid
-    ProxyCommand ssh vps802716.ovh.net nc localhost 1112
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1112
+
+Host mcore72
+    ProxyJump uom.pierreolivier.eu
+    HostName localhost
+    Port 1117
 
 Host sausage-penguin.duckdns.org
     User pierre
-
-Host babbage.cs.man.ac.uk
-    User oliviep
-
-Host chronoslinux.org
-	User pierre
-
-Host syst.univ-brest.fr
-	User pierre
-
-Host pierreolivier.eu
-	User pierre
